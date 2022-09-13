@@ -45,6 +45,17 @@ INSTALLED_APPS = [
 
 ]
 
+CORS_ALLOWED_ORIGINS = ['*']
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
