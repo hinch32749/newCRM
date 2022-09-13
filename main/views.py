@@ -33,8 +33,5 @@ class CityViewSet(viewsets.ReadOnlyModelViewSet):
 
 def index(request):
     refresh = RefreshToken.for_user(request.user)
-    context = {
-        "refresh": str(refresh),
-        "access": str(refresh.access_token)
-               }
+    context = {}
     return render(request, 'main/index.html', context)
